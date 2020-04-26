@@ -1,4 +1,5 @@
 # Reddit Flair Detector
+
 ## Table of Contents
 * About the App
 * Installation
@@ -9,7 +10,7 @@
 * References
 
 ### About the App
-A Web App based on Python's micro web framework Flask illustrating the task of data aquisition of reddit posts from the r/india subreddit, classification of the posts into 12 different flairs and deploying the best model as a web service by utilising Machine Learning and NLP algorithms. The app can be used here ###
+A Web App based on Python's micro web framework Flask illustrating the task of data aquisition of reddit posts from the r/india subreddit, classification of the posts into 12 different flairs and deploying the best model as a web service by utilising Machine Learning and NLP algorithms. The app can be used here https://redditflaird.herokuapp.com/
 
 ### Installation
 Note: The following installation has been tested on Ubuntu 16.04.
@@ -40,12 +41,9 @@ The task is to perform data aquisition of reddit posts from the /india subreddit
 
 a) ```title```
 
-
 b) ```comments```
 
-
 c) ```url```
-
 
 d) ```selftext```
 
@@ -59,20 +57,34 @@ The following ML algorithms are used to classify:
 
 a) ```Naive-Bayes```
 
-
 b) ```Linear Support Vector Machine```
-
 
 c) ```Logistic Regression```
 
-
 d) ```Random Forest```
-
 
 e) ```MLP```
 
-
 f) ```BOW with Keras```
+
+### Accuracies of all the models on different combination of features 
+
+| Feature\Model | Naive-Bayes  | Linear SVM  | Logistic Regression  | Random Forest | MLP | BOW |
+|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
+| title |   |   |   |   |   |   |
+| title + url |   |   |   |   |   |   |
+| title + url +selftext  |   |   |   |   |   |   |
+| title + url +selftext + comments  |   |   |   |   |   |   |
+
+## Deploying as Web Service
+
+The best model - Random Forest is deployed as a web app. Check the live demo [here](https://redditflaird.herokuapp.com/). The app was deployed using a free service like Heroku. All the required files can be found in the branch ```webapp```.
+
+## References
+
+* https://www.storybench.org/how-to-scrape-reddit-with-python/
+* https://towardsdatascience.com/multi-class-text-classification-model-comparison-and-selection-5eb066197568
+* https://towardsdatascience.com/designing-a-machine-learning-model-and-deploying-it-using-flask-on-heroku-9558ce6bde7b
 
 
 
