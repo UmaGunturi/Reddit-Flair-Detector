@@ -2,6 +2,7 @@
 
 This repository contains 2 ipynb notebooks and a webapp directory.
 * Flair_Detection.ipynb consists of Part-1,2,3 tasks.
+* Experiment_log.ipynb consists of details of series of experiments worked/failed.
 
 ## Table of Contents
 * About the App
