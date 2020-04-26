@@ -48,8 +48,6 @@ c) ```url```
 d) ```selftext```
 
 
-
-
 ## Flair-Classification
 
 The following ML algorithms are used to classify:
@@ -74,11 +72,13 @@ f) ```BOW with Keras```
 | title | 59  | 61  | 60  |  62 | 49  | 62 |
 | title + url | 59  | 64  | 64  | 64  | 49  | 59 |
 | title + url +selftext  | 60  | 73  | 74  | 75  | 56  | 71 |
-| title + url +selftext + comments  | 57  | 74  | 74  | 79  | 58  | 61 |
+| title + url +selftext + comments  | 57  | 74  | 74  | **79**  | 58  | 61 |
+
+Therefore, **Random Forest** was selected as the final model with **79%** accuracy using a feature combination of ```title +url +comments +selftext```
 
 ## Deploying as Web Service
 
-The best model - Random Forest is deployed as a web app. Check the live demo [here](https://redditflaird.herokuapp.com/). The app was deployed using a free service like Heroku. All the required files can be found in the branch ```webapp```.
+The best model - Random Forest is deployed as a web app. Check the live demo [here](https://redditflaird.herokuapp.com/). The app was deployed using a free service like Heroku. All the required files can be found in the branch ```webapp``` or the directory webapp.
 
 ## References
 
