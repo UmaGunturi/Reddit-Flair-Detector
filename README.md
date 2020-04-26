@@ -1,5 +1,8 @@
 # Reddit Flair Detector
 
+This repository contains 2 ipynb notebooks and a webapp directory.
+* Flair_Detection.ipynb consists of Part-1,2,3 tasks.
+
 ## Table of Contents
 * About the App
 * Installation
@@ -10,7 +13,7 @@
 * References
 
 ### About the App
-A Web App based on Python's micro web framework Flask illustrating the task of data aquisition of reddit posts from the r/india subreddit, classification of the posts into 12 different flairs and deploying the best model as a web service by utilising Machine Learning and NLP algorithms. The app can be used here https://redditflaird.herokuapp.com/
+A Web App based on Python's micro web framework Flask illustrating the task of data aquisition of reddit posts from the r/india subreddit, classification of the posts into 12 different flairs and deploying the best model as a web service by utilising Machine Learning and NLP algorithms. The app can be used here https://redditflaird.herokuapp.com/. 
 
 ### Installation
 Note: The following installation has been tested on Ubuntu 16.04.
