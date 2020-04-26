@@ -72,9 +72,9 @@ f) ```BOW with Keras```
 | title | 59  | 61  | 60  |  62 | 49  | 62 |
 | title + url | 59  | 64  | 64  | 64  | 49  | 59 |
 | title + url +selftext  | 60  | 73  | 74  | 75  | 56  | 71 |
-| title + url +selftext + comments  | 57  | 74  | 74  | **79**  | 58  | 61 |
+| title + url +selftext + comments  | 59 | 74  | 74  | **81**  | 59  | 67 |
 
-Therefore, **Random Forest** was selected as the final model with **79%** accuracy using a feature combination of ```title +url +comments +selftext```
+Therefore, **Random Forest** was selected as the final model with **81%** accuracy using a feature combination of ```title +url +comments +selftext```
 
 ## Deploying as Web Service
 
