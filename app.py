@@ -18,18 +18,17 @@ def home():
 def process():
     data = dict(request.form)
     post_url = data['post']
-    flair = utils.get_flair(post_url)
-    return {
-        'flair': flair
-    }
-
-    # try:
-    #     flair = utils.get_flair(post_url)
-    # except:
-    #     return {'error':'Something went wrong! Make sure the URL is valid'}
+    # flair = utils.get_flair(post_url)
     # return {
     #     'flair': flair
     # }
+    try:
+        flair = utils.get_flair(post_url)
+    except:
+        return {'error':'Something went wrong! Make sure the URL is valid'}
+    return {
+        'flair': flair
+    }
 
 
 
